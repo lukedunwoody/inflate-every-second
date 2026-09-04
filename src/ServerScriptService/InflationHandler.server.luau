@@ -43,6 +43,7 @@ Players.PlayerAdded:Connect(function(player)
 		humanoid = character:WaitForChild("Humanoid")
 		local head = character:WaitForChild("Head")
 		head.Massless = true
+		head.CanCollide = false
 
 		Glow.Touched:Connect(function(otherPart)
 			if atTopArea then return end
